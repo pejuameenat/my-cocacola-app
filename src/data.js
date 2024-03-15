@@ -163,122 +163,211 @@ export const navLists = [
 export const dropDown = [
   {
     id: 1,
-    title: 'OUR PLANET MATTERS',
-    text: 'Our purpose is to refresh the world and make a difference. See how our company and system employees make this possible every day and learn more about our areas of focus in sustainability.',
-    click: 'Explore Sustainability',
+    head: '136+',
+    title: 'years of refreshing the world',
+    text: 'The Coca‑Cola Company has been refreshing the world and making a difference for over 136 years. Explore our Purpose & Vision, History and more.',
+    click: 'LEARN MORE',
     color: 'bg-red-600',
     borderColor: 'border-red-600',
     lists: [
-      {
-        id: 1,
-        h3Link: 'WATER STEWARDSHIP',
-        list1: '2030 Water Strategy Key Goals',
-      },
+      [
+        {
+          id: 1,
+          h3Link: 'WATER STEWARDSHIP',
+          list1: '2030 Water Strategy Key Goals',
+        },
 
-      {
-        id: 2,
-        h3Link: 'SUSTAINABLE PACKAGING',
-        list1: 'Collection Strategy',
-        list2: 'Packaging Design',
-        list3: 'Partnership',
-      },
-      { id: 3, h3Link: 'IN OUR PRODUCTS', list1: 'Sugar Reduction' },
+        {
+          id: 2,
+          h3Link: 'SUSTAINABLE PACKAGING',
+          list1: 'Collection Strategy',
+          list2: 'Packaging Design',
+          list3: 'Partnership',
+        },
+        { id: 3, h3Link: 'IN OUR PRODUCTS', list1: 'Sugar Reduction' },
+      ],
+      [
+        {
+          id: 1,
+          h3Link: 'WATER STEWARDSHIP',
+          list1: '2030 Water Strategy Key Goals',
+        },
+
+        {
+          id: 2,
+          h3Link: 'SUSTAINABLE PACKAGING',
+          list1: 'Collection Strategy',
+          list2: 'Packaging Design',
+          list3: 'Partnership',
+        },
+        { id: 3, h3Link: 'IN OUR PRODUCTS', list1: 'Sugar Reduction' },
+      ],
     ],
   },
   {
     id: 2,
-    title: 'OUR PLANET MATTERS1',
-    text: 'Our purpose is to refresh the world and make a difference. See how our company and system employees make this possible every day and learn more about our areas of focus in sustainability.',
-    click: 'Explore Sustainability',
+    head: '200+',
+    title: 'brands worldwide',
+    text: 'From trademark Coca‑Cola to Sports, Juice & Dairy Drinks, Alcohol Ready-to-Drink Beverages and more, discover some of our most popular brands in North America and from around the world.',
+    click: 'DISCOVER OUR BRANDS',
     color: 'bg-orange-500',
     borderColor: 'border-orange-500',
     lists: [
-      {
-        id: 1,
-        h3Link: 'WATER STEWARDSHIP',
-        list1: '2030 Water Strategy Key Goals',
-      },
+      [
+        {
+          id: 1,
+          h3Link: 'WATER STEWARDSHIP',
+          list1: '2030 Water Strategy Key Goals',
+        },
 
-      {
-        id: 2,
-        h3Link: 'SUSTAINABLE PACKAGING',
-        list1: 'Collection Strategy',
-        list2: 'Packaging Design',
-        list3: 'Partnership',
-      },
-      { id: 3, h3Link: 'IN OUR PRODUCTS', list1: 'Sugar Reduction' },
+        {
+          id: 2,
+          h3Link: 'SUSTAINABLE PACKAGING',
+          list1: 'Collection Strategy',
+          list2: 'Packaging Design',
+          list3: 'Partnership',
+        },
+        { id: 3, h3Link: 'IN OUR PRODUCTS', list1: 'Sugar Reduction' },
+      ],
+      [
+        {
+          id: 1,
+          h3Link: 'WATER STEWARDSHIP',
+          list1: '2030 Water Strategy Key Goals',
+        },
+
+        {
+          id: 2,
+          h3Link: 'SUSTAINABLE PACKAGING',
+          list1: 'Collection Strategy',
+          list2: 'Packaging Design',
+          list3: 'Partnership',
+        },
+        { id: 3, h3Link: 'IN OUR PRODUCTS', list1: 'Sugar Reduction' },
+      ],
     ],
   },
   {
     id: 3,
-    title: '200+',
+    head: 'OUR PLANET MATTERS',
     text: 'Our purpose is to refresh the world and make a difference. See how our company and system employees make this possible every day and learn more about our areas of focus in sustainability.',
     click: 'Explore Sustainability',
     color: 'bg-green-400',
     borderColor: 'border-green-400',
     lists: [
-      {
-        id: 1,
-        h3Link: 'WATER STEWARDSHIP',
-        list1: '2030 Water Strategy Key Goals',
-      },
+      [
+        {
+          id: 1,
+          h3Link: 'WATER STEWARDSHIP',
+          list1: '2030 Water Strategy Key Goals',
+        },
 
-      {
-        id: 2,
-        h3Link: 'SUSTAINABLE PACKAGING',
-        list1: 'Collection Strategy',
-        list2: 'Packaging Design',
-        list3: 'Partnership',
-      },
-      { id: 3, h3Link: 'IN OUR PRODUCTS', list1: 'Sugar Reduction' },
+        {
+          id: 2,
+          h3Link: 'SUSTAINABLE PACKAGING',
+          list1: 'Collection Strategy',
+          list2: 'Packaging Design',
+          list3: 'Partnership',
+        },
+        { id: 3, h3Link: 'IN OUR PRODUCTS', list1: 'Sugar Reduction' },
+      ],
+      [
+        {
+          id: 1,
+          h3Link: 'SUSTAINABLE AGRICULTURE',
+          list1: 'Principles for Sustainable Agriculture (PSAs)',
+        },
+
+        {
+          id: 2,
+          h3Link: 'CLIMATE',
+        },
+        { id: 3, h3Link: 'IN OUR PRODUCTS', list1: 'Sugar Reduction' },
+      ],
     ],
   },
   {
     id: 4,
-    title: 'OUR PLANET MATTERS2',
+    head: 'OUR PLANET MATTERS',
     text: 'Our purpose is to refresh the world and make a difference. See how our company and system employees make this possible every day and learn more about our areas of focus in sustainability.',
     click: 'Explore Sustainability',
     color: 'bg-cyan-500',
     borderColor: 'border-cyan-500',
     lists: [
-      {
-        id: 1,
-        h3Link: 'WATER STEWARDSHIP',
-        list1: '2030 Water Strategy Key Goals',
-      },
+      [
+        {
+          id: 1,
+          h3Link: 'WATER STEWARDSHIP',
+          list1: '2030 Water Strategy Key Goals',
+        },
 
-      {
-        id: 2,
-        h3Link: 'SUSTAINABLE PACKAGING',
-        list1: 'Collection Strategy',
-        list2: 'Packaging Design',
-        list3: 'Partnership',
-      },
-      { id: 3, h3Link: 'IN OUR PRODUCTS', list1: 'Sugar Reduction' },
+        {
+          id: 2,
+          h3Link: 'SUSTAINABLE PACKAGING',
+          list1: 'Collection Strategy',
+          list2: 'Packaging Design',
+          list3: 'Partnership',
+        },
+        { id: 3, h3Link: 'IN OUR PRODUCTS', list1: 'Sugar Reduction' },
+      ],
+      [
+        {
+          id: 1,
+          h3Link: 'WATER STEWARDSHIP',
+          list1: '2030 Water Strategy Key Goals',
+        },
+
+        {
+          id: 2,
+          h3Link: 'SUSTAINABLE PACKAGING',
+          list1: 'Collection Strategy',
+          list2: 'Packaging Design',
+          list3: 'Partnership',
+        },
+        { id: 3, h3Link: 'IN OUR PRODUCTS', list1: 'Sugar Reduction' },
+      ],
     ],
   },
   {
     id: 5,
-    title: '200+',
+    head: '200+',
     text: 'Our purpose is to refresh the world and make a difference. See how our company and system employees make this possible every day and learn more about our areas of focus in sustainability.',
     click: 'Explore Sustainability',
     color: 'bg-yellow-600',
     borderColor: 'border-yellow-600',
     lists: [
-      {
-        id: 1,
-        h3Link: 'WATER STEWARDSHIP',
-        list1: '2030 Water Strategy Key Goals',
-      },
+      [
+        {
+          id: 1,
+          h3Link: 'WATER STEWARDSHIP',
+          list1: '2030 Water Strategy Key Goals',
+        },
 
-      {
-        id: 2,
-        h3Link: 'SUSTAINABLE PACKAGING',
-        list1: 'Collection Strategy',
-        list2: 'Packaging Design',
-        list3: 'Partnership',
-      },
-      { id: 3, h3Link: 'IN OUR PRODUCTS', list1: 'Sugar Reduction' },
+        {
+          id: 2,
+          h3Link: 'SUSTAINABLE PACKAGING',
+          list1: 'Collection Strategy',
+          list2: 'Packaging Design',
+          list3: 'Partnership',
+        },
+        { id: 3, h3Link: 'IN OUR PRODUCTS', list1: 'Sugar Reduction' },
+      ],
+      [
+        {
+          id: 1,
+          h3Link: 'WATER STEWARDSHIP',
+          list1: '2030 Water Strategy Key Goals',
+        },
+
+        {
+          id: 2,
+          h3Link: 'SUSTAINABLE PACKAGING',
+          list1: 'Collection Strategy',
+          list2: 'Packaging Design',
+          list3: 'Partnership',
+        },
+        { id: 3, h3Link: 'IN OUR PRODUCTS', list1: 'Sugar Reduction' },
+      ],
     ],
   },
   {
@@ -289,20 +378,38 @@ export const dropDown = [
     color: 'bg-amber-500',
     borderColor: 'border-amber-500',
     lists: [
-      {
-        id: 1,
-        h3Link: 'WATER STEWARDSHIP',
-        list1: '2030 Water Strategy Key Goals',
-      },
+      [
+        {
+          id: 1,
+          h3Link: 'WATER STEWARDSHIP',
+          list1: '2030 Water Strategy Key Goals',
+        },
 
-      {
-        id: 2,
-        h3Link: 'SUSTAINABLE PACKAGING',
-        list1: 'Collection Strategy',
-        list2: 'Packaging Design',
-        list3: 'Partnership',
-      },
-      { id: 3, h3Link: 'IN OUR PRODUCTS', list1: 'Sugar Reduction' },
+        {
+          id: 2,
+          h3Link: 'SUSTAINABLE PACKAGING',
+          list1: 'Collection Strategy',
+          list2: 'Packaging Design',
+          list3: 'Partnership',
+        },
+        { id: 3, h3Link: 'IN OUR PRODUCTS', list1: 'Sugar Reduction' },
+      ],
+      [
+        {
+          id: 1,
+          h3Link: 'WATER STEWARDSHIP',
+          list1: '2030 Water Strategy Key Goals',
+        },
+
+        {
+          id: 2,
+          h3Link: 'SUSTAINABLE PACKAGING',
+          list1: 'Collection Strategy',
+          list2: 'Packaging Design',
+          list3: 'Partnership',
+        },
+        { id: 3, h3Link: 'IN OUR PRODUCTS', list1: 'Sugar Reduction' },
+      ],
     ],
   },
   {
@@ -313,32 +420,39 @@ export const dropDown = [
     color: 'bg-stone-400',
     borderColor: 'border-stone-400',
     lists: [
-      {
-        id: 1,
-        h3Link: 'WATER STEWARDSHIP',
-        list1: '2030 Water Strategy Key Goals',
-      },
+      [
+        {
+          id: 1,
+          h3Link: 'WATER STEWARDSHIP',
+          list1: '2030 Water Strategy Key Goals',
+        },
 
-      {
-        id: 2,
-        h3Link: 'SUSTAINABLE PACKAGING',
-        list1: 'Collection Strategy',
-        list2: 'Packaging Design',
-        list3: 'Partnership',
-      },
-      { id: 3, h3Link: 'IN OUR PRODUCTS', list1: 'Sugar Reduction' },
+        {
+          id: 2,
+          h3Link: 'SUSTAINABLE PACKAGING',
+          list1: 'Collection Strategy',
+          list2: 'Packaging Design',
+          list3: 'Partnership',
+        },
+        { id: 3, h3Link: 'IN OUR PRODUCTS', list1: 'Sugar Reduction' },
+      ],
+      [
+        {
+          id: 1,
+          h3Link: 'WATER STEWARDSHIP',
+          list1: '2030 Water Strategy Key Goals',
+        },
+
+        {
+          id: 2,
+          h3Link: 'SUSTAINABLE PACKAGING',
+          list1: 'Collection Strategy',
+          list2: 'Packaging Design',
+          list3: 'Partnership',
+        },
+        { id: 3, h3Link: 'IN OUR PRODUCTS', list1: 'Sugar Reduction' },
+      ],
     ],
   },
 ]
-
-//  {
-//         id: 2,
-//         h3Link: 'Principles for Sustainable Agriculture (PSAs)',
-//         list3: 'SUSTAINABLE AGRICULTURE',
-//       },
-
-//        { id: 4, h3Link: 'CLIMATE' },
-//       {
-//         id: 6,
-//         h3Link: 'SUSTAINABILITY & GOVERNANCE RESOURCE CENTER',
-//       },
+ 

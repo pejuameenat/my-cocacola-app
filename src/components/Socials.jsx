@@ -10,7 +10,7 @@ const Socials = () => {
     border: '2px solid #fff',
     padding: '6px',
     fontSize: '40px',
-    marginRight: '.6rem'
+    marginRight: '.6rem',
   }
   return (
     <div className="socials lg:flex">

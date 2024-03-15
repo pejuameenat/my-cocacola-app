@@ -7,7 +7,7 @@ import access from '../assets/accessibility.jpg'
 import { navLists } from '../data'
 // import DropDowns from './DropDowns'
 const Nav = (props) => {
-  const [isOpen, setIsOpen] = useState(false)
+  const [isOpen, setIsOpen] = useState(true)
 
   const isNavOpen = () => {
     if (window.innerWidth < 992) {
@@ -46,9 +46,13 @@ const Nav = (props) => {
               key={list.id}
               onMouseEnter={() => props.handleDropDown(i)}
               onMouseLeave={() => props.setShowDropDown(false)}
-              className={`py-4 border-b-2 lg:border-b-0 lg:hover:text-white ${list.color} lg:py-6 px-4 `}
+              className={`py-4 border-b-2 lg:border-b-0  lg:hover:text-white ${list.color} lg:py-6 px-4 `}
             >
-              <a href="" onClick={(e) => click(e)}>
+              <a
+                href=""
+                className={`focus:${list.color}`}
+                onClick={(e) => click(e)}
+              >
                 {list.listItem}
               </a>
             </li>

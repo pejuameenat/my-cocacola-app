@@ -149,9 +149,10 @@ body {
 }
 
 .carousel {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    place-items:center;
     gap: 1rem;
-    align-items: stretch;
     width: 255%;
     padding: 1rem 0;
 }
@@ -274,6 +275,7 @@ body {
 
     .carousel {
         width: 159%;
+        place-items: unset;
     }
 
     .jobs-container {

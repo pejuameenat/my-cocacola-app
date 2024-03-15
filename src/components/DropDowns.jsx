@@ -1,7 +1,7 @@
 import { dropDown } from '../data'
 import Drop from './Drop'
 const DropDowns = (props) => {
-  const { title, text, click, color, borderColor, lists } =
+  const { head, text, click, color, borderColor, lists } =
     dropDown[props.currentElement]
   return (
     <>
@@ -11,7 +11,8 @@ const DropDowns = (props) => {
         >
           <div className=" flex flex-col lg:flex-row gap-8 w-4/5 ml-auto">
             <article className="w-4/12">
-              <h3 className="font-bold lg:text-4xl">{title}</h3>
+              <h3 className="font-bold lg:text-4xl">{head}</h3>
+              <span>{props?.title}</span>
               <p className="py-3">{text}</p>
               <button
                 type="button"
@@ -20,10 +21,16 @@ const DropDowns = (props) => {
                 {click}
               </button>
             </article>
-            <article className="lg:w-9/12 flex gap-5">
-              {lists.map((drop) => (
-                <Drop key={drop.id} {...drop} />
-              ))}
+            <article className="lg:w-9/12 flex flex-col gap-5">
+              {lists.map((el, i) => {
+                return (
+                  <ul className="lg:flex gap-4" key={i}>
+                    {el.map((drop) => (
+                      <Drop key={drop.id} {...drop} />
+                    ))}
+                  </ul>
+                )
+              })}
             </article>
           </div>
         </div>
