@@ -14,7 +14,7 @@ const Socials = () => {
   }
   return (
     <div className="socials lg:flex">
-      <XIcon sx={style} />
+      <XIcon sx={style}/>
       <FacebookIcon sx={style} />
       <LinkedInIcon sx={style} />
       <InstagramIcon sx={style} />

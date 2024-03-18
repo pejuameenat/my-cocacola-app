@@ -168,7 +168,7 @@ export const dropDown = [
     text: 'The Coca‑Cola Company has been refreshing the world and making a difference for over 136 years. Explore our Purpose & Vision, History and more.',
     click: 'LEARN MORE',
     color: 'bg-red-600',
-    borderColor: 'border-red-600',
+    borderColor: 'border-t-red-600',
     lists: [
       [
         {
@@ -211,7 +211,7 @@ export const dropDown = [
     text: 'From trademark Coca‑Cola to Sports, Juice & Dairy Drinks, Alcohol Ready-to-Drink Beverages and more, discover some of our most popular brands in North America and from around the world.',
     click: 'DISCOVER OUR BRANDS',
     color: 'bg-orange-500',
-    borderColor: 'border-orange-500',
+    borderColor: 'border-t-orange-500',
     lists: [
       [
         {
@@ -253,7 +253,7 @@ export const dropDown = [
     text: 'Our purpose is to refresh the world and make a difference. See how our company and system employees make this possible every day and learn more about our areas of focus in sustainability.',
     click: 'Explore Sustainability',
     color: 'bg-green-400',
-    borderColor: 'border-green-400',
+    borderColor: 'border-t-green-400',
     lists: [
       [
         {
@@ -292,7 +292,7 @@ export const dropDown = [
     text: 'Our purpose is to refresh the world and make a difference. See how our company and system employees make this possible every day and learn more about our areas of focus in sustainability.',
     click: 'Explore Sustainability',
     color: 'bg-cyan-500',
-    borderColor: 'border-cyan-500',
+    borderColor: 'border-t-cyan-500',
     lists: [
       [
         {
@@ -334,7 +334,7 @@ export const dropDown = [
     text: 'Our purpose is to refresh the world and make a difference. See how our company and system employees make this possible every day and learn more about our areas of focus in sustainability.',
     click: 'Explore Sustainability',
     color: 'bg-yellow-600',
-    borderColor: 'border-yellow-600',
+    borderColor: 'border-t-yellow-600',
     lists: [
       [
         {
@@ -376,7 +376,7 @@ export const dropDown = [
     text: 'Our purpose is to refresh the world and make a difference. See how our company and system employees make this possible every day and learn more about our areas of focus in sustainability.',
     click: 'Explore Sustainability',
     color: 'bg-amber-500',
-    borderColor: 'border-amber-500',
+    borderColor: 'border-t-amber-500',
     lists: [
       [
         {
@@ -414,11 +414,11 @@ export const dropDown = [
   },
   {
     id: 7,
+    color: 'bg-stone-400',
+    borderColor: 'border-t-stone-400',
     title: '200+',
     text: 'Our purpose is to refresh the world and make a difference. See how our company and system employees make this possible every day and learn more about our areas of focus in sustainability.',
     click: 'Explore Sustainability',
-    color: 'bg-stone-400',
-    borderColor: 'border-stone-400',
     lists: [
       [
         {

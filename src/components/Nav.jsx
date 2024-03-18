@@ -7,18 +7,16 @@ import access from '../assets/accessibility.jpg'
 import { navLists } from '../data'
 // import DropDowns from './DropDowns'
 const Nav = (props) => {
-  const [isOpen, setIsOpen] = useState(true)
-
-  const isNavOpen = () => {
-    if (window.innerWidth < 992) {
-      setIsOpen((prevOpen) => !prevOpen)
-    }
-  }
+  const [isOpen, setIsOpen] = useState(false)
 
   function click(e) {
     if (e.target.tagName === 'A') e.preventDefault()
   }
-
+ const isNavOpen = () => {
+   if(window.innerWidth < 992) {
+     setIsOpen((prevOpen) => !prevOpen)
+   }
+ }
   return (
     <div className="sticky top-0 z-20 px-6 py-2 bg-white flex flex-col gap-6 align-items border-b border-black lg:flex-row lg:py-0">
       <div className="w-full flex justify-between lg:w-1/5 div">
@@ -27,7 +25,7 @@ const Nav = (props) => {
           type="button"
           aria-haspopup="true"
           onClick={isNavOpen}
-          className="w-10 h-8 px-2 border  focus:outline-offset-2 focus:outline-2 focus:outline-slate-900"
+          className="w-10 h-8 px-2 border  focus:outline-offset-2 focus:outline-2 focus:outline-slate-900 lg:hidden"
         >
           <img src={menu} className=" w-8 h-6 lg:hidden" alt="menu bar" />
         </button>
@@ -59,10 +57,20 @@ const Nav = (props) => {
           ))}
           {/* <DropDowns/> */}
         </ul>
-        <div className="w-20 flex gap-5 align-items div">
-          <img src={search} className="dropImages" alt="search" />
-          <img src={img2} className="dropImages" alt="browse" />
-          <img src={access} className="dropImages" alt="accessibility" />
+        <div className="w-20 flex gap-4 align-items">
+          <button type="button" aria-label="search" className="nav-Button">
+            <img src={search} className="dropImages" alt="search" />
+          </button>
+          <button type="button" aria-label="browse" className="nav-Button">
+            <img src={img2} className="dropImages" alt="browse" />
+          </button>
+          <button
+            type="button"
+            aria-label="accessibility"
+            className="nav-Button"
+          >
+            <img src={access} className="dropImages" alt="accessibility" />
+          </button>
         </div>
       </nav>
     </div>

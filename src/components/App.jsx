@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import Nav from './Nav'
 import DropDowns from './DropDowns'
 import Slider from './Slider'
@@ -14,6 +14,7 @@ function App() {
   const [currentIndex, setCurrentIndex] = useState(0)
   const [currentElement, setCurrentElement] = useState(0)
   const [showDropDown, setShowDropDown] = useState(false)
+  // const [windowWidth, setwindowWidth] = useState(null)
 
   function handleControlsClick(id) {
     setCurrentIndex(id)
@@ -23,6 +24,14 @@ function App() {
     setCurrentElement(i)
     setShowDropDown(true)
   }
+  // useEffect(()=>{
+  //   window.addEventListener('load', isNavOpen)
+  //  window.addEventListener('resize', isNavOpen)
+  //  return ()=>{
+  //     window.removeEventListener('load', isNavOpen)
+  //     window.removeEventListener('resize', isNavOpen)
+  //  }
+  // }, [])
 
   return (
     <>

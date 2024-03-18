@@ -7,9 +7,9 @@ const DropDowns = (props) => {
     <>
       {props.showDropDown && (
         <div
-          className={`h-fit w-full py-4 bg-white border-t-8 border-b border-solid duration-300 delay-100  ease-in ${borderColor} lg:fixed lg:z-20 lg:top-17`}
+          className={`h-fit w-full py-4 bg-white border-t-8 border-b border-solid duration-300 delay-100 ease-in ${borderColor} border-b-gray-900 lg:fixed lg:z-20 lg:top-17`}
         >
-          <div className=" flex flex-col lg:flex-row gap-8 w-4/5 ml-auto">
+          <div className="flex flex-col lg:flex-row gap-8 w-4/5 ml-auto">
             <article className="w-4/12">
               <h3 className="font-bold lg:text-4xl">{head}</h3>
               <span>{props?.title}</span>
