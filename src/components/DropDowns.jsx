@@ -7,10 +7,10 @@ const DropDowns = (props) => {
     <>
       {props.showDropDown && (
         <div
-          className={`h-fit w-full py-4 bg-white border-t-8 border-b border-solid duration-300 delay-100 ease-in ${borderColor} border-b-gray-900 lg:fixed lg:z-20 lg:top-17`}
+          className={`h-fit w-screen py-4 bg-white  border-b border-solid duration-300 delay-100 ease-in ${borderColor} border-b-gray-900 lg:border-t-8 lg:fixed lg:z-20 lg:top-17 lg:left-0`}
         >
-          <div className="flex flex-col lg:flex-row gap-8 w-4/5 ml-auto">
-            <article className="w-4/12">
+          <div className="flex flex-col lg:flex-row gap-8 w-4/5 lg:ml-auto">
+            <article className=" w-full lg:w-4/12">
               <h3 className="font-bold lg:text-4xl">{head}</h3>
               <span>{props?.title}</span>
               <p className="py-3">{text}</p>
@@ -24,7 +24,7 @@ const DropDowns = (props) => {
             <article className="lg:w-9/12 flex flex-col gap-5">
               {lists.map((el, i) => {
                 return (
-                  <ul className="lg:flex gap-4" key={i}>
+                  <ul className=" w-full lg:flex gap-4" key={i}>
                     {el.map((drop) => (
                       <Drop key={drop.id} {...drop} />
                     ))}

@@ -8,11 +8,11 @@
     }
 
     .dropImages {
-        @apply w-7 object-contain
+        @apply w-5 object-contain
     }
 
     .nav-Button {
-        @apply w-full focus:outline-offset-2 focus:outline-2 focus:outline-slate-900
+        @apply focus:outline-offset-2 focus:outline-2 focus:outline-slate-900
     }
 }
 
@@ -23,7 +23,7 @@
     --color: #fff;
     --color2: #000;
     --bgColor: transparent;
-    --fontWeigth: 600;
+    --fontWeight: 600;
 }
 
 * {
@@ -40,6 +40,7 @@ body {
     width: 90%;
     max-width: 1120px;
     margin: 0 auto;
+    
 }
 
 /* SLIDERS */
@@ -122,7 +123,7 @@ body {
 .goal-card button {
     background-color: transparent;
     border: 0;
-    font-weight: var(--fontWeigth);
+    font-weight: var(--fontWeight);
 }
 
 .grid {
@@ -132,7 +133,7 @@ body {
 }
 
 .button span {
-    font-weight: var(--fontWeigth);
+    font-weight: var(--fontWeight);
     font-size: 1.5rem;
     padding: 0 .5rem;
 }
@@ -173,7 +174,7 @@ body {
     object-fit: cover;
 }
 
-/* absolute positios for jobs */
+/* absolute positions for jobs */
 .jobs-container {
     position: relative;
     margin-top: 11rem;
@@ -186,7 +187,7 @@ body {
     border: 2px solid var(--color2);
     border-radius: 25px;
     padding: .5rem;
-    font-weight: var(--fontWeigth);
+    font-weight: var(--fontWeight);
 }
 
 .job-card {
@@ -240,7 +241,7 @@ body {
     border-radius: 25px;
     padding: .4rem;
     text-transform: capitalize;
-    font-weight: var(--fontWeigth);
+    font-weight: var(--fontWeight);
     border: 2px solid var(--color2);
     transition: 400ms ease-in;
 }

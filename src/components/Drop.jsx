@@ -1,6 +1,6 @@
 const Drop = (props) => {
   return (
-    <ul className="w-2/6">
+    <ul className=" w-full lg:w-2/6">
       <div>
         <h3 className="font-bold border-b border-black">
           <a href="">{props.h3Link}</a>

@@ -1,6 +1,5 @@
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 import Nav from './Nav'
-import DropDowns from './DropDowns'
 import Slider from './Slider'
 import Goals from './Goals'
 import Jobs from './Jobs'
@@ -14,7 +13,6 @@ function App() {
   const [currentIndex, setCurrentIndex] = useState(0)
   const [currentElement, setCurrentElement] = useState(0)
   const [showDropDown, setShowDropDown] = useState(false)
-  // const [windowWidth, setwindowWidth] = useState(null)
 
   function handleControlsClick(id) {
     setCurrentIndex(id)
@@ -24,19 +22,21 @@ function App() {
     setCurrentElement(i)
     setShowDropDown(true)
   }
-  // useEffect(()=>{
-  //   window.addEventListener('load', isNavOpen)
-  //  window.addEventListener('resize', isNavOpen)
-  //  return ()=>{
-  //     window.removeEventListener('load', isNavOpen)
-  //     window.removeEventListener('resize', isNavOpen)
-  //  }
-  // }, [])
+
+  function handleMobileDropDown(i) {
+    setCurrentElement(i)
+    setShowDropDown(prev=> !prev)
+  }
 
   return (
     <>
-      <Nav handleDropDown={handleDropDown} setShowDropDown={setShowDropDown} />
-      <DropDowns showDropDown={showDropDown} currentElement={currentElement} />
+      <Nav
+        handleDropDown={handleDropDown}
+        setShowDropDown={setShowDropDown}
+        showDropDown={showDropDown}
+        currentElement={currentElement}
+        handleMobileDropDown={handleMobileDropDown}
+      />
       <Slider
         slider={slider}
         handleControlsClick={handleControlsClick}

@@ -9,7 +9,7 @@ const Footer = () => {
         <img src={img} className="w-3/6 lg:w-3/12" alt="coca cola logo" />
         <button
           type="button"
-          className="w-full rounded-3xl h-10 border-2 border-solid border-white lg:w-3/12 lg:text-sm"
+          className="w-full rounded-3xl h-10 border-2 border-solid border-white duration-300 ease-in hover:bg-neutral-400 lg:w-3/12 lg:text-sm"
         >
           United States | English
         </button>

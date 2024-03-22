@@ -146,18 +146,18 @@ export const navLists = [
   {
     id: 1,
     listItem: ' Our Company',
-    color: 'lg:hover:bg-red-500',
+    color: 'hover:bg-red-500',
   },
   {
     id: 2,
     listItem: 'Brands',
-    color: 'lg:hover:bg-orange-600',
+    color: 'hover:bg-orange-600',
   },
-  { id: 3, listItem: 'Sustainability ', color: 'lg:hover:bg-green-400' },
-  { id: 4, listItem: 'Social', color: 'lg:hover:bg-cyan-500' },
-  { id: 5, listItem: 'Careers', color: 'lg:hover:bg-yellow-600' },
-  { id: 6, listItem: 'Media Centers', color: 'lg:hover:bg-amber-500' },
-  { id: 7, listItem: 'Investors', color: 'lg:hover:bg-stone-400' },
+  { id: 3, listItem: 'Sustainability ', color: 'hover:bg-green-400' },
+  { id: 4, listItem: 'Social', color: 'hover:bg-cyan-500' },
+  { id: 5, listItem: 'Careers', color: 'hover:bg-yellow-600' },
+  { id: 6, listItem: 'Media Centers', color: 'hover:bg-amber-500' },
+  { id: 7, listItem: 'Investors', color: 'hover:bg-stone-400' },
 ]
 
 export const dropDown = [
@@ -455,4 +455,3 @@ export const dropDown = [
     ],
   },
 ]
- 
