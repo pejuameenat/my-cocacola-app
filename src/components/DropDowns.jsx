@@ -7,9 +7,13 @@ const DropDowns = (props) => {
     <>
       {props.showDropDown && (
         <div
-          className={`h-fit w-screen py-4 bg-white  border-b border-solid duration-300 delay-100 ease-in ${borderColor} border-b-gray-900 lg:border-t-8 lg:fixed lg:z-20 lg:top-17 lg:left-0`}
+          className={`h-fit w-screen py-4 bg-white border-b border-solid duration-300 ${borderColor} border-b-gray-900 lg:border-t-8 lg:fixed lg:z-20 lg:top-17 lg:left-0`}
         >
-          <div className="flex flex-col lg:flex-row gap-8 w-4/5 lg:ml-auto">
+          <div
+            className="flex flex-col lg:flex-row gap-8 w-4/5 lg:ml-auto"
+            onMouseEnter={() => props.setShowDropDown(true)}
+            onMouseLeave={() => props.setShowDropDown(false)}
+          >
             <article className=" w-full lg:w-4/12">
               <h3 className="font-bold lg:text-4xl">{head}</h3>
               <span>{props?.title}</span>

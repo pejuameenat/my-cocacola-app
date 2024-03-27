@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import img1 from '../assets/the-coca-cola-company-logo-0.svg'
 import menu from '../assets/menu.png'
 import MobileNav from './MobileNav'
@@ -14,12 +14,20 @@ const Nav = ({
 }) => {
   const [navigation, setNavigation] = useState(navLists)
   const [isOpen, setIsOpen] = useState(false)
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth)
 
   const isNavOpen = () => {
-    if (window.innerWidth < 992) {
+    setWindowWidth(window.innerWidth)
+    if (windowWidth < 992) {
       setIsOpen((prevOpen) => !prevOpen)
+    }else{
+      setIsOpen(false)
     }
   }
+  useEffect(()=>{
+     window.addEventListener('resize', isNavOpen)
+     return ()=> window.removeEventListener('resize', isNavOpen)
+  }, [windowWidth])
 
   return (
     <div className="sticky top-0 z-20 px-6 pt-3 bg-white flex flex-col gap-6 items-center border-b border-black lg:flex-row lg:py-0">
@@ -35,7 +43,7 @@ const Nav = ({
         </button>
       </div>
       {/* nav */}
-      {window.innerWidth < 992 ? (
+      {windowWidth < 992 ? (
         <MobileNav
           isOpen={isOpen}
           navigation={navigation}

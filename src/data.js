@@ -24,8 +24,8 @@ export const goal = [
   {
     id: 1,
     img: coke1,
-    title: '2022 bussiess and sustainability report',
-    info: 'We build loved brands that bring joy to our customers lives with beverage choices for all ocassions, tastes ad lifestyles. Our growth strategy is grounded in our core values and commitment to social and eviriomental responsiility',
+    title: '2022 business and sustainability report',
+    info: 'We build loved brands that bring joy to our customers lives with beverage choices for all occasions, tastes ad lifestyles. Our growth strategy is grounded in our core values and commitment to social and environmental responsibility',
     action: 'See our progress',
   },
   {
@@ -48,7 +48,7 @@ export const jobs = [
   {
     id: 2,
     h4: 'A purpose driven history',
-    p: `The Coca Cola Company's purpose to refresh the world and make a diference and we have remained true to that purpose for 137 years.
+    p: `The Coca Cola Company's purpose to refresh the world and make a difference and we have remained true to that purpose for 137 years.
     Our strategy is centered around people our consumers and employees and driving sustainable solutions that build resilience into our business to respond to current and future challenges, while creating positive change for the planet`,
     p2: `Our strategy is centered around people—our consumers and employees—and driving sustainable solutions that build resilience into our business to respond to current and future challenges, while creating positive change for the planet. `,
     action: 'Learn more about us',
@@ -88,7 +88,7 @@ export const featured = [
   {
     id: 1,
     img: feature2,
-    title: 'Topo Chico plant provides free water to its Monterrey neighours',
+    title: 'Topo Chico plant provides free water to its Monterrey neighbors',
     info: 'For more than a century, Topo Chico has offered drinking water to the local community via a free, 24/7 tap outside its Monterrey plant.',
     action: 'Explore',
   },
@@ -96,14 +96,14 @@ export const featured = [
     id: 2,
     img: feature3,
     title: 'Jack & Daniels and Coca-Cola RTD launches in US.',
-    info: 'Jack Daniels & Coca Cola RTD -a pre-mixed, canned cocktail that first lauched in Mexico - is set to hit stores in the United States.',
+    info: 'Jack Daniels & Coca Cola RTD -a pre-mixed, canned cocktail that first launched in Mexico - is set to hit stores in the United States.',
     action: 'Explore',
   },
   {
     id: 3,
     img: feature2,
-    title: 'Dasani and Sprite oost Sustainability Packaging Credentials',
-    info: "Two of the Coca-Cola Compay's biggest brands in North America to support a circular economy for plastic packaging.",
+    title: 'Dasani and Sprite boost Sustainability Packaging Credentials',
+    info: "Two of the Coca-Cola Company's biggest brands in North America to support a circular economy for plastic packaging.",
     action: 'Explore',
   },
   {
@@ -146,14 +146,18 @@ export const navLists = [
   {
     id: 1,
     listItem: ' Our Company',
-    color: 'hover:bg-red-500',
+    color: 'focus:bg-red-500 hover:bg-red-500',
   },
   {
     id: 2,
     listItem: 'Brands',
-    color: 'hover:bg-orange-600',
+    color: 'focus:bg-orange-600 hover:bg-orange-600',
   },
-  { id: 3, listItem: 'Sustainability ', color: 'hover:bg-green-400' },
+  {
+    id: 3,
+    listItem: 'Sustainability ',
+    color: 'hover:bg-green-400',
+  },
   { id: 4, listItem: 'Social', color: 'hover:bg-cyan-500' },
   { id: 5, listItem: 'Careers', color: 'hover:bg-yellow-600' },
   { id: 6, listItem: 'Media Centers', color: 'hover:bg-amber-500' },

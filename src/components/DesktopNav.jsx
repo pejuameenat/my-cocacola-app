@@ -27,7 +27,6 @@ const DesktopNav = ({
             <li
               key={list.id}
               onMouseEnter={() => handleDropDown(i)}
-              onMouseLeave={() => setShowDropDown(false)}
               className={`py-4 lg:hover:text-white ${list.color} lg:py-6 px-4 `}
             >
               <a
@@ -42,7 +41,7 @@ const DesktopNav = ({
         </ul>
         <NavSearchButtons />
       </nav>
-      <DropDowns currentElement={currentElement} showDropDown={showDropDown} />
+      <DropDowns currentElement={currentElement} showDropDown={showDropDown} setShowDropDown={setShowDropDown}/>
     </div>
   )
 }
